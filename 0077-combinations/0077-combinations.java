@@ -13,6 +13,7 @@ class Solution {
     public static void dfs(int[] nums, List<List<Integer>> res, List<Integer> temp, int start, int k){
         if(temp.size() == k){
             res.add(new ArrayList<>(temp));
+            return;
         }
         
         for(int i = start ; i < nums.length ; i++){
